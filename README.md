@@ -15,20 +15,20 @@ to setup node as master node we need to run
 
      docker swarm init --advertise-addr 192.168.22.10
      
-#### on worker node run
+#### on all worker node  run the out put of above command
      docker swarm join --token <token return by swarm init command on manager node>  192.168.22.10:2377
      
      
-####On all workers nodes
-   need to run the out put of above command
 
+#### on manager node
+  
 We can create a service with single replica 
 
     docker service create -d --name=nginx_service -p 80:80 --replicas 1 nginx:latest
 
   
   
-docker node promote node01.example.com
+
   
   
   
@@ -64,3 +64,7 @@ on manager node
    
    verification 
    curl 192.168.22.11:80
+   
+   
+   ### 
+      docker node promote node01.example.com
