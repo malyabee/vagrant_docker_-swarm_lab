@@ -43,7 +43,8 @@ on manager node
   
    docker service ps nginx_service
    
- Commands to scale services   
+ ## Commands to scale services  
+ 
    docker service scale nginx_service=3
    
    docker service ps nginx_service
