@@ -19,7 +19,7 @@ to setup node as master node we need to run
      docker swarm join --token <token return by swarm init command on manager node>  192.168.22.10:2377
      
      
-####On worker nodes
+####On all workers nodes
    need to run the out put of above command
 
 We can create a service with single replica 
