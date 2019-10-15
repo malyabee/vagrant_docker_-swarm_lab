@@ -42,12 +42,19 @@ on manager node
    
  Commands to scale services   
    docker service scale nginx_service=3
+   
    docker service ps nginx_service
+   
    docker service scale nginx_service=5
+   
    docker service ps nginx_service
+   
    docker service scale nginx_service=7
+   
    docker service ps nginx_service
+   
    docker service scale nginx_service=8
+   
    docker service ps nginx_service
    
    
