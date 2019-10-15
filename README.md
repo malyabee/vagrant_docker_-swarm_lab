@@ -15,6 +15,9 @@ to setup node as master node we need to run
 
      docker swarm init --advertise-addr 192.168.22.10
      
+#### on worker node run
+     docker swarm join --token <token return by swarm init command on manager node>  192.168.22.10:2377
+     
      
 ####On worker nodes
    need to run the out put of above command
